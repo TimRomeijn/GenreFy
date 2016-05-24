@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title></title>
+    <link href="../custom/style.css" rel="stylesheet" />
+    <link href="https://developer.spotify.com/web-api/static/css/cached.css" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="container">
+        <h1>Genre-Fy</h1>
+        <form id="start-form">
+            <input type="submit" id="start_button" class="btn btn-primary" value="Start New Session" />
+        </form>
+
+        <h1 id="currentGenre">Current Genre:</h1> <h1 id="genre"></h1>
+
+        <marquee behavior="scroll" scrollamount="10" direction="left" id ="currentSong"></marquee>
+
+        <div id="preview">
+           
+        </div>
+
+        <form id="accept-form">
+            <input type="submit" id="accept_button" class="btn btn-primary" value="✔"/>
+        </form>
+
+        <form id="decline-form">
+            <input type="submit" id="decline_button" class="btn btn-primary" value="X" />
+        </form>
+    </div>
+    <script src="../js/jquery-2.1.3.js"></script>
+    <script src="../js/spotify.js"></script>
+</body>
+</html>
